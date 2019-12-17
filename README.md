@@ -1,2 +1,3 @@
-# planck_firmware
-qmk firmware for plank keyboard
+# PlasmaBoy planck layout
+
+Default planck layout with some tweaks.
