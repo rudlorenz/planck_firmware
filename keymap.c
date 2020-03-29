@@ -111,14 +111,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |      |Voice-|Voice+|Mus on|Musoff|MIDIon|MIDIof|TermOn|TermOf|      |      |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      |      |      |      |      |             |      |      |      |      |      |
+ * |      |      |      |      |      | PRINTSCREEN |      |      |      |      |      |
  * `-----------------------------------------------------------------------------------'
  */
 [_ADJUST] = LAYOUT_planck_grid(
     _______, RESET,   DEBUG,   RGB_TOG, RGB_MOD, RGB_HUI, RGB_HUD, RGB_SAI, RGB_SAD,  RGB_VAI, RGB_VAD, KC_DEL ,
     _______, _______, MU_MOD,  AU_ON,   AU_OFF,  AG_NORM, AG_SWAP, QWERTY,  _______,  _______, _______, _______,
     _______, MUV_DE,  MUV_IN,  MU_ON,   MU_OFF,  MI_ON,   MI_OFF,  TERM_ON, TERM_OFF, _______, _______, _______,
-    _______, _______, _______, _______, _______, _______, _______, _______, _______,  _______, GAME   , QWERTY
+    _______, _______, _______, _______, _______, KC_PSCR, KC_PSCR, _______, _______,  _______, GAME   , QWERTY
 )
 
 };
