@@ -59,3 +59,7 @@ Default planck layout with some tweaks.
     |------+------+------+------+------+------+------+------+------+------+------+------|
     |      |      |      |      |      | PrintScreen |      |      |      | GAME |QWERTY|
     `-----------------------------------------------------------------------------------'
+
+## QMK Comment
+
+  To generate ascii art of current keymap launch `qmk-commgen.py` in the same directory as `keymap.c`.
