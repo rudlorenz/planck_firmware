@@ -41,6 +41,7 @@ keycodes={
     "KC_9,":"   9  ,",
     "KC_0,":"   0  ,",
     "KC_ENTER,":"Enter ,",
+    "KC_SFTENT,":"SFTENT,",
     "KC_ENT,":"Enter ,",
     "KC_ESC,":" Esc  ,",
     "KC_ESCAPE,":" Esc  ,",
@@ -424,17 +425,17 @@ keycodes={
     "SH_TG,":" SH Tog,",
     "SH_TT,":" SH TgM,",
     #RGB Codes
-    "RGB_TOG,":"Ld Tog,",
-    "RGB_MODE_FORWARD,":" Ld M+,",
-    "RGB_MOD,":" Ld M+,",
+    "RGB_TOG,":" RGB  ,",
+    "RGB_MODE_FORWARD,":"RGBMDF,",
+    "RGB_MOD,":"RGBMOD,",
     "RGB_MODE_REVERSE,":" Ld M-,",
     "RGB_RMOD,":" Ld M-,",
-    "RGB_HUI,":" Ld H+,",
-    "RGB_HUD,":" Ld H-,",
-    "RGB_SAI,":" Ld S+,",
-    "RGB_SAD,":" Ld S-,",
-    "RGB_VAI,":" Ld V+,",
-    "RGB_VAD,":" Ld V-,",
+    "RGB_HUI,":" HUE+ ,",
+    "RGB_HUD,":" HUE- ,",
+    "RGB_SAI,":" SAT+ ,",
+    "RGB_SAD,":" SAT- ,",
+    "RGB_VAI,":"BRGTH+,",
+    "RGB_VAD,":"BRGTH-,",
     "RGB_SPI,":"Ld Sp+,",
     "RGB_SPD,":"Ld Sp-,",
     "RGB_MODE_PLAIN,":" Ld St,",
@@ -489,8 +490,10 @@ keycodes={
     "REPLACE│":",",
     "Space │Space │":"    Space    │",
     "_":" ",
-        
-    
+    #custom keycodes
+    "EXT_GAME":"EXIT_G,",
+    "EXT_MOBA":"EXIT_M,",
+
 }
 def replkc(line,others):
     for rfrom, rto in keycodes.items():
