@@ -15,13 +15,12 @@
  */
 
 #include QMK_KEYBOARD_H
+#include "audio.h"
 #include "muse.h"
 #include "print.h"
-
-#ifdef AUDIO_ENABLED
-#include "audio.h"
 #include "song_list.h"
-#endif
+
+#include "quantum/rgblight.h"
 
 enum planck_layers
 {
@@ -192,7 +191,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record)
 			stop_all_notes();
 			PLAY_SONG(rise_up_song);
 #endif
-
 			layer_on(_GAME);
 		}
 		return false;
@@ -375,6 +373,13 @@ void dip_switch_update_user(uint8_t index, bool active)
 
 void matrix_scan_user(void)
 {
+	static bool startup = false;
+	if (!startup)
+	{
+		startup = true;
+		rgblight_set();
+	}
+
 #ifdef AUDIO_ENABLE
 	if (muse_mode)
 	{
